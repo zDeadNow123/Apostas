@@ -26,7 +26,6 @@ namespace apostassystem {
             for (int i = 0; i < numCartoes; i++) {
 
                 string card = ""; // string que armazena o cartao
-                //Random rnd = new Random();
 
                 // Categorias dentro do cartao (5 grupos) de dois numeros cada (de acordo com o rnd.Next [x, xx])
                 int[] Groups = new int[5];
