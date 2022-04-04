@@ -50,11 +50,16 @@ namespace apostassystem {
                 cartoes[i] = card;
 
                 //System.IO.File.WriteAllLines(@"C:\Users\Julio\Desktop\cartoes.txt", cartoes);
+                Console.ForegroundColor = (ConsoleColor)JRandom.Range((int)ConsoleColor.DarkBlue, (int)ConsoleColor.Yellow);
+
                 Console.WriteLine("Cartão " + (i + 1) + ": " + cartoes[i]);
+
             }
 
 
             changeCard: // (Não é boa prática) :D
+
+            Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine(""); // Escreve uma linha em branco pra coisa não ficar muito colada
 
@@ -98,8 +103,8 @@ namespace apostassystem {
 
                     Groups[j] = JRandom.Range(1, 61);
 
-                    // Verificar se o numero aleatorio gerado ja existe no cartao
-                    while (card.Contains(Groups[j].ToString())) {
+                // Verificar se o numero aleatorio gerado ja existe no cartao
+                while (card.Contains(Groups[j].ToString())) {
                         Groups[j] = JRandom.Range(1, 61);
                     }
 
@@ -109,6 +114,8 @@ namespace apostassystem {
                 for (int i = 0; i < numerocartoes; i++) {
 
                     cartoes[cartao - 1] = card;
+
+                    Console.ForegroundColor = (ConsoleColor)JRandom.Range((int)ConsoleColor.DarkBlue, (int)ConsoleColor.Yellow);
 
                     Console.WriteLine("Cartão " + (i + 1) + ": " + cartoes[i]);
                 }
