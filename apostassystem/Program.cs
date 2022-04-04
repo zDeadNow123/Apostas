@@ -14,8 +14,6 @@ namespace apostassystem {
 
             Program p = new Program(); // A função Main não deixa chamar funções não estáticas dentro dela, teve que ser desse jeito mesmo
             p.apostas();
-
-            Console.ReadKey();
         }
 
         public void apostas() {
