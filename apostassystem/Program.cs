@@ -44,7 +44,7 @@ namespace apostassystem {
 
                 cartoes[i] = card;
 
-                // guardar vetor de cartões em um arquivo tendo espaço entre as linhas
+                // guardar vetor de cartões em um arquivo
                 //System.IO.File.WriteAllLines(@"C:\Users\Julio\Desktop\cartoes.txt", cartoes);
                 Console.WriteLine("Cartão " + (i + 1) + ": " + cartoes[i]);
             }
