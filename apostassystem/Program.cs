@@ -22,6 +22,8 @@ namespace apostassystem {
             // Usuário solicita o numero de cartões desejados
             Console.WriteLine("Digite o número de cartões desejados:");
             int numCartoes = int.Parse(Console.ReadLine());
+            
+            Console.Clear();
 
             // Criar cartões para apostas com base no numero de cartões solicitados, cada cartão com 10 numeros aleatorios de 1 a 60, divididos em 5 grupos por "-", e cada grupo com 2 numeros aleatorios
             cartoes = new string[numCartoes];
