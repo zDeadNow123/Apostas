@@ -33,10 +33,19 @@ namespace apostassystem {
                 for (int j = 0; j < 5; j++) {
 
                     Groups[j] = JRandom.Range(1, 61);
+
+                    // Verificar se o numero aleatorio gerado ja existe no cartao
+                    while (card.Contains(Groups[j].ToString())) {
+                        Groups[j] = JRandom.Range(1, 61);
+                    }
+
                     card = string.Join("-", Groups);
                 }
 
                 cartoes[i] = card;
+
+                // guardar vetor de cartões em um arquivo tendo espaço entre as linhas
+                //System.IO.File.WriteAllLines(@"C:\Users\Julio\Desktop\cartoes.txt", cartoes);
                 Console.WriteLine("Cartão " + (i + 1) + ": " + cartoes[i]);
             }
 
