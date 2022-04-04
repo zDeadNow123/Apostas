@@ -10,7 +10,7 @@ namespace apostassystem {
         string[] cartoes;
         public static void Main(string[] args) {
 
-            Program p = new Program();
+            Program p = new Program(); // A classe Main não deixa chamar funções não estáticas dentro dela, teve que ser desse jeito mesmo
             p.apostas();
 
             Console.ReadKey();
