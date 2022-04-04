@@ -66,7 +66,6 @@ namespace apostassystem {
                 Console.WriteLine("Digite o numero do cartao desejado:");
                 int cartao = int.Parse(Console.ReadLine());
 
-                // Chama o método que gera o numero aleatorio para o cartao
                 changeCard(cartao, numCartoes);
                 goto changeCard; // Depois que o método encerra ele torna a perguntar ao usuário se ele deseja gerar um numero aleatorio para um cartão especifico
             }
