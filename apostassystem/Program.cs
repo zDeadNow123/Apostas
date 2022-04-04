@@ -54,7 +54,7 @@ namespace apostassystem {
             }
 
 
-            changeCard: // (Não é boa prática, mais não estou com vontade de criar outra função) :D
+            changeCard: // (Não é boa prática) :D
 
             Console.WriteLine(""); // Escreve uma linha em branco pra coisa não ficar muito colada
 
