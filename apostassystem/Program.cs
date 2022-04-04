@@ -52,14 +52,17 @@ namespace apostassystem {
                 Console.WriteLine("Cartão " + (i + 1) + ": " + cartoes[i]);
             }
 
-            changeCard:
+
+            changeCard: // (Não é boa prática, mais não estou com vontade de criar outra função) :D
+
+            Console.WriteLine(""); // Escreve uma linha em branco pra coisa não ficar muito colada
+
             // Perguntar ao usuário se ele deseja gerar um numero aleatorio para um cartão especifico
             Console.WriteLine("Deseja gerar um numero aleatorio para um cartão especifico? (s/n)");
             string resposta = Console.ReadLine();
 
-            Console.Clear();
-
             if (resposta == "S" || resposta == "s") {
+
                 Console.WriteLine("Digite o numero do cartao desejado:");
                 int cartao = int.Parse(Console.ReadLine());
 
@@ -73,15 +76,22 @@ namespace apostassystem {
             string resposta2 = Console.ReadLine();
 
             if (resposta2 == "S" || resposta2 == "s") {
-                Console.Clear();
-                apostas();
+
+                Console.Clear(); // Limpa a tela pra ficar clean
+                apostas(); // Re-executa a função
+            }
+
+            else if (resposta2 == "N" || resposta2 == "n") {
+
+                // Encerra o Programa
+                return;
             }
 
         }
 
         public void changeCard(int cartao, int numerocartoes) {
 
-                Console.Clear();
+                Console.Clear(); // Limpa o console
                 
                 string card = "";
 
@@ -98,7 +108,6 @@ namespace apostassystem {
 
                     card = string.Join("-", Groups);
                 }
-
                 
                 for (int i = 0; i < numerocartoes; i++) {
 
@@ -106,8 +115,8 @@ namespace apostassystem {
 
                     Console.WriteLine("Cartão " + (i + 1) + ": " + cartoes[i]);
                 }
-                
-
+               
         }
+
     }
 }
