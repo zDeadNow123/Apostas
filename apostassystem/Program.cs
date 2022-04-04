@@ -30,14 +30,14 @@ namespace apostassystem {
 
                 string card = ""; // string que armazena o cartao
 
-                // Categorias dentro do cartao (5 grupos) de dois numeros cada (de acordo com o rnd.Next [x, xx])
+                // Categorias dentro do cartao (5 grupos) de dois numeros cada (de acordo com o JRandom.Range [x, xx])
                 int[] Groups = new int[5];
 
                 for (int j = 0; j < 5; j++) {
 
                     Groups[j] = JRandom.Range(1, 61);
 
-                    // Verificar se o numero aleatorio gerado ja existe no cartao
+                    // Verificar se o numero aleatorio gerado ja existe no cartao (se existir ele gera novamente)
                     while (card.Contains(Groups[j].ToString())) {
                         Groups[j] = JRandom.Range(1, 61);
                     }
@@ -47,7 +47,6 @@ namespace apostassystem {
 
                 cartoes[i] = card;
 
-                // guardar vetor de cartões em um arquivo
                 //System.IO.File.WriteAllLines(@"C:\Users\Julio\Desktop\cartoes.txt", cartoes);
                 Console.WriteLine("Cartão " + (i + 1) + ": " + cartoes[i]);
             }
@@ -57,7 +56,6 @@ namespace apostassystem {
 
             Console.WriteLine(""); // Escreve uma linha em branco pra coisa não ficar muito colada
 
-            // Perguntar ao usuário se ele deseja gerar um numero aleatorio para um cartão especifico
             Console.WriteLine("Deseja gerar um numero aleatorio para um cartão especifico? (s/n)");
             string resposta = Console.ReadLine();
 
@@ -71,19 +69,17 @@ namespace apostassystem {
                 goto changeCard; // Depois que o método encerra ele torna a perguntar ao usuário se ele deseja gerar um numero aleatorio para um cartão especifico
             }
 
-            // Perguntar ao usuário se deseja voltar ao inicio do programa
             Console.WriteLine("Deseja voltar ao inicio do programa? (S/N)");
             string resposta2 = Console.ReadLine();
 
             if (resposta2 == "S" || resposta2 == "s") {
 
-                Console.Clear(); // Limpa a tela pra ficar clean
-                apostas(); // Re-executa a função
+                Console.Clear();
+                apostas();
             }
 
             else if (resposta2 == "N" || resposta2 == "n") {
 
-                // Encerra o Programa
                 return;
             }
 
