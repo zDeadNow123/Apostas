@@ -41,18 +41,15 @@ namespace apostassystem {
                 Console.WriteLine("Cartão " + (i + 1) + ": " + cartoes[i]);
             }
 
-            // Perguntar ao usuário se ele deseja gerar outro valor aleatorio para um cartão especifico
-            Console.WriteLine("Deseja gerar um novo valor para um cartão especifico? (S/N)");
-            string resposta = Console.ReadLine();
-
-            // Se o usuário digitar "S", o programa pede para o usuário digitar o numero do cartão
-
-            // Limpar tela
-            Console.Clear();
-
             // Perguntar ao usuário se deseja voltar ao inicio do programa
             Console.WriteLine("Deseja voltar ao inicio do programa? (S/N)");
             string resposta2 = Console.ReadLine();
+
+            if (resposta2 == "S" || resposta2 == "s") {
+                Console.Clear();
+                apostas();
+            }
+
         }
     }
 }
