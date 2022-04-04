@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 namespace apostassystem {
     internal class Program {
 
+        // Definição de variáveis globais
+
         string[] cartoes;
+
         public static void Main(string[] args) {
 
             Program p = new Program(); // A função Main não deixa chamar funções não estáticas dentro dela, teve que ser desse jeito mesmo
