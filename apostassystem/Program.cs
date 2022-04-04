@@ -8,7 +8,6 @@ namespace apostassystem {
     internal class Program {
 
         // Definição de variáveis globais
-
         string[] cartoes;
 
         public static void Main(string[] args) {
