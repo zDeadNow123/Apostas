@@ -6,3 +6,11 @@ C:\Julio\Visual Studio\General Projects\apostassystem\apostassystem\obj\Debug\ap
 C:\Julio\Visual Studio\General Projects\apostassystem\apostassystem\obj\Debug\apostassystem.csproj.CoreCompileInputs.cache
 C:\Julio\Visual Studio\General Projects\apostassystem\apostassystem\obj\Debug\apostassystem.exe
 C:\Julio\Visual Studio\General Projects\apostassystem\apostassystem\obj\Debug\apostassystem.pdb
+C:\Users\Julio\Source\Repos\Apostas\apostassystem\bin\Debug\apostassystem.exe.config
+C:\Users\Julio\Source\Repos\Apostas\apostassystem\bin\Debug\apostassystem.exe
+C:\Users\Julio\Source\Repos\Apostas\apostassystem\bin\Debug\apostassystem.pdb
+C:\Users\Julio\Source\Repos\Apostas\apostassystem\obj\Debug\apostassystem.csproj.AssemblyReference.cache
+C:\Users\Julio\Source\Repos\Apostas\apostassystem\obj\Debug\apostassystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Julio\Source\Repos\Apostas\apostassystem\obj\Debug\apostassystem.csproj.CoreCompileInputs.cache
+C:\Users\Julio\Source\Repos\Apostas\apostassystem\obj\Debug\apostassystem.exe
+C:\Users\Julio\Source\Repos\Apostas\apostassystem\obj\Debug\apostassystem.pdb

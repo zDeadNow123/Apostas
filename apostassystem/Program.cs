@@ -26,14 +26,14 @@ namespace apostassystem {
             for (int i = 0; i < numCartoes; i++) {
 
                 string card = ""; // string que armazena o cartao
-                Random rnd = new Random();
+                //Random rnd = new Random();
 
                 // Categorias dentro do cartao (5 grupos) de dois numeros cada (de acordo com o rnd.Next [x, xx])
                 int[] Groups = new int[5];
 
                 for (int j = 0; j < 5; j++) {
 
-                    Groups[j] = rnd.Next(1, 61);
+                    Groups[j] = JRandom.Range(1, 61);
                     card = string.Join("-", Groups);
                 }
 
