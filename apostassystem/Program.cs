@@ -70,7 +70,7 @@ namespace apostassystem {
                 goto changeCard; // Depois que o método encerra ele torna a perguntar ao usuário se ele deseja gerar um numero aleatorio para um cartão especifico
             }
 
-            Console.WriteLine("Deseja voltar ao inicio do programa? (S/N)");
+            Console.WriteLine("Deseja voltar ao inicio do programa? (s/n)");
             string resposta2 = Console.ReadLine();
 
             if (resposta2 == "S" || resposta2 == "s") {
